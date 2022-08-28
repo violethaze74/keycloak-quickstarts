@@ -40,7 +40,7 @@
 
         <version.wildfly.maven.plugin>1.2.2.Final</version.wildfly.maven.plugin>
         <servlet.api.30.version>1.0.2.Final</servlet.api.30.version>
-        <jboss-jaxrs-api_2.1_spec>1.0.1.Final</jboss-jaxrs-api_2.1_spec>
+        <jboss-jaxrs-api_2.1_spec>1.0.3.Final</jboss-jaxrs-api_2.1_spec>
         <version.jboss.maven.plugin>7.4.Final</version.jboss.maven.plugin>
         <version.war.maven.plugin>2.6</version.war.maven.plugin>
         <version.enforcer.maven.plugin>1.4.1</version.enforcer.maven.plugin>
@@ -434,7 +434,7 @@
                                 <configuration>
                                     <target name="run">
                                         <exec dir="target/wildfly-${version.wildfly}/bin" executable="${jboss-cli.executable}" inputstring="">
-                                            <arg value="--file=adapter-install-offline.cli" />
+                                            <arg value="--file=adapter-install-offline.cli"/>
                                         </exec>
                                     </target>
                                 </configuration>
